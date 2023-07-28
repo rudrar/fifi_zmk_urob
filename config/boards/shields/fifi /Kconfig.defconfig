@@ -1,0 +1,22 @@
+if SHIELD_FIFI_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "Fifi"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_FIFI_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "Fifi Right"
+	
+endif
+
+if SHIELD_FIFI_LEFT || SHIELD_FIFI_RIGHT
+
+config ZMK_SPLIT
+	default y
+endif
