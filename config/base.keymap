@@ -237,7 +237,65 @@ ZMK_BEHAVIOR(win_sleep, macro,
     tap-ms = <50>;
     bindings = <&kp LG(X) &kp U &kp S>;
 )
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_scrn_shot {
+            timeout-ms = <70>;
+            key-positions = <0 4>;
+            bindings = <&kp LG(LS(S))>;
+        };
 
+        combo_scsnip {
+            timeout-ms = <70>;
+            key-positions = <1 9>;
+            bindings = <&your_macro>;
+        };
+
+
+        combo_alt_tab {
+            timeout-ms = <70>;
+            key-positions = <24 5>;
+            bindings = <&kp LA(TAB)>;
+        };
+
+        combo_Parentheses {
+            timeout-ms = <70>;
+            key-positions = <0 29>;
+            bindings = <&macro_par>;
+        };
+
+        combo_bracket_round_l {
+            timeout-ms = <70>;
+            key-positions = <1 18>;
+            bindings = <&kp LPAR>;
+        };
+        combo_bracket_round_r {
+            timeout-ms = <70>;
+            key-positions = <1 19>;
+            bindings = <&kp RIGHT_PARENTHESIS>;
+        };
+
+        combo_parentheses_chevrons {
+            timeout-ms = <70>;
+            key-positions = <1 29>;
+            bindings = <&parentheses_chevrons>;
+        };
+
+        combo_bracket_square_l {
+            timeout-ms = <70>;
+            key-positions = <0 16>;
+            bindings = <&kp LBKT>;
+        };
+
+        combo_bracket_square_r {
+            timeout-ms = <70>;
+            key-positions = <0 17>;
+            bindings = <&kp RBKT>;
+        };
+    };
+
+};
 // misc aliases
 #define CANCEL      &kp K_CANCEL             // cancel caps-word, num-word and smart-mouse
 #define DSK_PREV    &hmr RSHFT LG(LC(LEFT))  // previous desktop
