@@ -70,12 +70,6 @@
             bindings = <&kp RIGHT_PARENTHESIS>;
         };
 
-        combo_parentheses_chevrons {
-            timeout-ms = <70>;
-            key-positions = <1 29>;
-            bindings = <&parentheses_chevrons>;
-        };
-
         combo_bracket_square_l {
             timeout-ms = <70>;
             key-positions = <0 16>;
