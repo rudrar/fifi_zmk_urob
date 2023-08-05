@@ -53,13 +53,6 @@
             bindings = <&kp LG(LS(S))>;
         };
 
-        combo_scsnip {
-            timeout-ms = <70>;
-            key-positions = <1 9>;
-            bindings = <&your_macro>;
-        };
-
-
         combo_alt_tab {
             timeout-ms = <70>;
             key-positions = <24 5>;
