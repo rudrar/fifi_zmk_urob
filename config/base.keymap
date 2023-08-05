@@ -59,12 +59,6 @@
             bindings = <&kp LA(TAB)>;
         };
 
-        combo_Parentheses {
-            timeout-ms = <70>;
-            key-positions = <0 29>;
-            bindings = <&macro_par>;
-        };
-
         combo_bracket_round_l {
             timeout-ms = <70>;
             key-positions = <1 18>;
