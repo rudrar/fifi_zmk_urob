@@ -125,6 +125,11 @@
             key-positions = <30 32>;
             bindings = <&kp TAB>;
         };
+        combo_bt_clr {
+            timeout-ms = <70>;
+            key-positions = <14 9>;
+            bindings = <&bt BT_CLR>;
+        };
 
 
         combo_alt_tab {
