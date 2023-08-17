@@ -14,8 +14,7 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: fifi_left
-  - board: nice_nano_v2
-    shield: fifi_right
+    shield: chocv
+
   #- board: nice_nano_v2
   #  shield: settings_reset
